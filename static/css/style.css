@@ -173,6 +173,7 @@ h1, .brand {
 
 .bio {
     color: var(--text-muted);
+    margin-top: -10rem;
     max-width: 480px;
     margin-bottom: 1.5rem;
 }
