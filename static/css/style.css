@@ -60,7 +60,7 @@ h1, .brand {
     background-color: #966e36;
     border-radius: 0 0 100% 0;
     z-index: 0;
-}
+} /* menambahkan hiasan border pada pojok kiri atas*/
 
 .left-shape2{
     position: absolute;
@@ -71,7 +71,7 @@ h1, .brand {
     background-color: #cbcca9;
     border-radius: 0 0 100% 0;
     z-index: 0;
-}
+} /* menambahkan 1 lagi yang lebih kecil agar berbentuk berbeda dari yang pojok kanan */
 
 .right-shape{
     position: absolute;
@@ -159,12 +159,12 @@ h1, .brand {
 }
 
 .intro{
-    font-size: 3rem !important;
+    font-size: 3rem !important; 
 }
 
 .intro .name{
-    color: #c7a16b;
-}
+    color: #c7a16b; 
+} /* mengubah hanya bagian nama Taufiq*/
 
 .hero-identity h1 {
     font-size: clamp(3rem, 7vw, 5rem);
@@ -228,45 +228,6 @@ h1, .brand {
 }
 
 
-/* .blob {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.6;
-}
-
-.blob-1{
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle at 70% 40%, #c7a16b, #f0d9b5);
-    top: -50px;
-    left: -50px;
-    z-index: 1;
-    clip-path: circle(40% at 50% 50%);
-    opacity: 0.4;
-}
-
-.blob-2{
-    width: 450px;
-    height: 450px;
-    background: radial-gradient(circle at 30% 30%, #cbcca9, transparent);
-    top: 40px;
-    left: 60px;
-    z-index: 2;
-    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
-    /* opacity: 0.6;
-}
-
-.blob-3{
-    width: 390px;
-    height: 385px;
-    background: #5e5c32;
-    top: 15px;
-    left: 3px;
-    z-index: 3;
-    /* clip-path: ellipse(40% 60% at 50% 50%); */
-    /* opacity: 0.8; */
-/* } */ */ */
-
 .avatar {
     position: relative;
     z-index: 10;
@@ -309,7 +270,7 @@ h1, .brand {
 
 /* ----------------------------------------------------------------- */
 .skills{
-    max-width: 900px;
+    max-width: 900px;  /*batas kiri dan kanan */
     margin: 0 auto;
     padding: 2rem 1rem;
 }
@@ -324,7 +285,7 @@ h1, .brand {
 
 .skills-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));  /**/
     gap: 1rem;
 }
 
@@ -337,12 +298,12 @@ h1, .brand {
     font-weight: 600;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+}  
 
 .skill-card:hover{
     transform: translateY(-6px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
+}  /*menambahkan animasi pada card skill*/
 
 
 /* -------------------------------------------------------------------------- */
