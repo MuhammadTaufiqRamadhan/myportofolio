@@ -18,8 +18,12 @@ from django.contrib import admin
 from django.urls import path
 
 from portofolio.views import landing_page
+from portofolio.views import skill_page
+from portofolio.views import project_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', landing_page, name='landing_page'),
+    path('skill/', skill_page, name='skill_page'),
+    path('project/', project_page, name='project_page'),
 ]
