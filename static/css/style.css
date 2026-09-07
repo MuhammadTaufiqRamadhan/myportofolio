@@ -173,7 +173,7 @@ h1, .brand {
 
 .bio {
     color: var(--text-muted);
-    margin-top: -10rem;
+    /* margin-top: -10rem; */
     max-width: 480px;
     margin-bottom: 1.5rem;
 }
@@ -224,14 +224,13 @@ h1, .brand {
     grid-area: photo;
     align-self: center;
     position: relative;
-    top: -70px;
 }
 
 
 .avatar {
     position: relative;
     z-index: 10;
-    top: 100px;
+    /* top: 100px; */
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -285,7 +284,7 @@ h1, .brand {
 
 .skills-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));  /**/
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));  
     gap: 1rem;
 }
 
