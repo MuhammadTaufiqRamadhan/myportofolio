@@ -11,12 +11,16 @@
 </head>
 <body>
     <header class="site-header">
+        <div class="left-shape"></div>
+        <div class="left-shape2"></div>
+        <div class="right-shape"></div>
         <div class="container">
-            <a href="#profile" class="brand">Muhammad Taufiq Ramadhan</a>
+            <a href="#profile" class="brand">Taufiq</a>
             <nav>
                 <a href="{% url 'landing_page' %}">Profile</a>
                 <a href="{% url 'skill_page' %}">Skill</a>
                 <a href="{% url 'project_page' %}">Project</a>
+                <a href="{% url 'interest_page' %}">Interest</a>
             </nav>
         </div>
     </header>
@@ -25,12 +29,15 @@
         <section class="hero" id="profile">
             <div class="container hero-grid">
                 <div class="hero-identity">
-                    <p class="hero-kicker">Computer Science &middot; Universitas Indonesia</p>
-                    <h1>Muhammad Taufiq Ramadhan</h1>
+                    <p class="hero-kicker">Hello</p>
+                    <h1 class="intro">I'm <span class= "name">Taufiq</span> CS student at University Indonesia </h1>
                 </div>
                 <div class="hero-photo">
-                    <div class="photo-block"></div>
-                    <img class="avatar" src="/static/img/Muhammad_Taufiq_R.jpeg" alt="Photo of Muhammad Taufiq Ramadhan">
+                    <!-- <div class="photo-block"></div> -->
+                    <div class = "blob blob-1"></div>
+                    <div class = "blob blob-2"></div>
+                    <div class = "blob blob-3"></div>
+                    <img class="avatar" src="/static/img/Taufiq.png" alt="Photo of Muhammad Taufiq Ramadhan">
                 </div>
                 <div class="hero-details">
                     <p class="bio">Computer Science student at Universitas Indonesia. Learning, building, and figuring things out along the way.</p>

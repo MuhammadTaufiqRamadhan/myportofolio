@@ -9,3 +9,6 @@ def skill_page(request):
 
 def project_page(request):
     return render(request, "project.html")
+
+def interest_page(request):
+    return render(request, "interest.html")
