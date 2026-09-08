@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Taufiq Ramadhan - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="left-shape"></div>
+        <div class="left-shape2"></div>
+        <div class="right-shape"></div>
+        <!-- menambahkan hiasan di pojok kanan dan kiri atas -->
+        <div class="container">
+            <a href="#profile" class="brand">Taufiq</a>
+            <nav>
+                <a href="{% url 'landing_page' %}">Profile</a>
+                <a href="{% url 'skill_page' %}">Skill</a>
+                <a href="{% url 'project_page' %}">Project</a>
+                <a href="{% url 'interest_page' %}">Interest</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="profile">
+            <div class="container hero-grid">
+                <div class="hero-identity">
+                    <p class="hero-kicker">Hello</p>
+                    <h1 class="intro">I'm <span class= "name">Taufiq</span> CS student at University Indonesia </h1> 
+                    <!-- menambahkan class name agar dapat mengubah hanya nama -->
+                </div>
+                <div class="hero-photo">
+                    <img class="avatar" src="/static/img/Taufiq.png" alt="Photo of Muhammad Taufiq Ramadhan">
+                </div>
+                <div class="hero-details">
+                    <p class="bio">Computer Science student at Universitas Indonesia. Learning, building, and figuring things out along the way.</p>
+                    <dl class="meta-list">
+                        <div class="meta-row">
+                            <dt>NPM</dt>
+                            <dd>2506536143</dd>
+                        </div>
+                        <div class="meta-row">
+                            <dt>Program</dt>
+                            <dd>S1 Ilmu Komputer</dd>
+                        </div>
+                    </dl>
+                    <div class="social-links">
+                        <a href="https://github.com/MuhammadTaufiqRamadhan" class="social-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/muhammad-taufiq-ramadhan-7a8982379" class="social-link">LinkedIn</a>
+                        <a href="mailto:taufikramadhan662@gmail.com" class="social-link">Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Muhammad Taufiq Ramadhan. Fakultas Ilmu Komputer, Universitas Indonesia.</p>
+        </div>
+    </footer>
+</body>
+</html>

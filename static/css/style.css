@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+:root {
+    --ink: #1c1917;
+    --paper: #cbcca9;
+    --accent: #5e5c32;
+    --accent-dark: #a8442a;
+    --line: #e3d9c9;
+    --text-muted: #6b6459;
+    --radius: 4px;
+}
+
+body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background-color: var(--paper);
+    line-height: 1.6;
+}
+
+h1, .brand {
+    /* font-size: 2rem; */
+    font-family: "Poppins", sans-serif;
+    color: #5b3920;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.site-header {
+    border-bottom: none;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.site-header .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+}
+
+.left-shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #966e36;
+    border-radius: 0 0 100% 0;
+    z-index: 0;
+} /* menambahkan hiasan border pada pojok kiri atas*/
+
+.left-shape2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #cbcca9;
+    border-radius: 0 0 100% 0;
+    z-index: 0;
+} /* menambahkan 1 lagi yang lebih kecil agar berbentuk berbeda dari yang pojok kanan */
+
+.right-shape{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #c49a5e;
+    border-radius: 0 0 0 100%;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #c7a16b;
+    text-decoration: none;
+}
+
+.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-header nav a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    position: relative;
+    padding: 0.25rem 0;
+    transition: color 0.3 ease;
+}
+
+.site-header nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #c7a16b;
+    transition: width -.3s ease;
+}
+
+.site-header nav a:hover{
+    color: #c49a5e;
+}
+
+.site-header nav a:hover::after{
+    width: 100%;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+.hero {
+    padding: 4.5rem 0 5rem;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-areas:
+        "identity photo"
+        "details  photo";
+    gap: 1.5rem 3rem;
+}
+
+.hero-identity {
+    grid-area: identity;
+}
+
+.hero-details {
+    grid-area: details;
+}
+
+.hero-kicker {
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+    /* text-transform: uppercase; */
+    color: #c7a16b;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.intro{
+    font-size: 3rem !important; 
+}
+
+.intro .name{
+    color: #c7a16b; 
+} /* mengubah hanya bagian nama Taufiq*/
+
+.hero-identity h1 {
+    font-size: clamp(3rem, 7vw, 5rem);
+    line-height: 0.95;
+}
+
+.bio {
+    color: var(--text-muted);
+    /* margin-top: -10rem; */
+    max-width: 480px;
+    margin-bottom: 1.5rem;
+}
+
+.meta-list {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.meta-row dt {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 0.15rem;
+}
+
+.meta-row dd {
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--paper);
+    background-color: var(--ink);
+    border-radius: var(--radius);
+    padding: 0.5rem 1.1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2ease;
+}
+
+.social-link:hover {
+    background-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.hero-photo {
+    grid-area: photo;
+    align-self: center;
+    position: relative;
+}
+
+
+.avatar {
+    position: relative;
+    z-index: 10;
+    /* top: 100px; */
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.site-footer {
+    padding: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: auto;
+    /* border-top: 1px solid var(--line); */
+}
+
+@media (max-width: 600px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "identity"
+            "photo"
+            "details";
+    }
+
+    .hero-photo {
+        max-width: 220px;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+}
+
+/* ----------------------------------------------------------------- */
+.skills{
+    max-width: 900px;  /*batas kiri dan kanan */
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.skills h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #c49a5e;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));  
+    gap: 1rem;
+}
+
+.skill-card{
+    background-color:#5e5c32;
+    color: #fff4e0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}  
+
+.skill-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}  /*menambahkan animasi pada card skill*/
+
+
+/* -------------------------------------------------------------------------- */
+
+.project{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.project h1{
+    text-align: center;
+    top: 500px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #c49a5e;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+.interests{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.interests h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #c49a5e;
+}
+
+.interest-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 1rem;
+}
+
+.interest-card{
+    background-color:#5e5c32;
+    color: #fff4e0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
