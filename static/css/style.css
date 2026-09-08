@@ -8,7 +8,7 @@
     --ink: #1c1917;
     --paper: #cbcca9;
     --accent: #5e5c32;
-    --accent-dark: #a8442a;
+    --accent-dark: #ea512b;
     --line: #e3d9c9;
     --text-muted: #6b6459;
     --radius: 4px;
@@ -358,4 +358,61 @@ h1, .brand {
 .interest-card:hover{
     transform: translateY(-6px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+.experience-section {
+    padding: 4rem 0;
+    border-top: 1px solid var(--line);
+}
+
+.section-kicker {
+    color: var(--accent-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.experience-section h1 {
+    margin: 0.4rem 0 1.5rem;
+    font-size: 2rem;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.experience-card {
+    padding: 1.25rem;
+    background-color: #5e5c32;
+    color: #fff4e0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.experience-category {
+    color: var(--accent-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.experience-card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.experience-description,
+.empty-state {
+    color: #fff4e0;
+}
+
+.experience-status {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
