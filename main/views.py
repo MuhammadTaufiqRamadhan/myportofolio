@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from main.models import Experience
+from main.models import Experience, Mahasiswa
 
 
 def show_main(request):
@@ -12,7 +12,9 @@ def show_main(request):
         "bio": (
             "Computer Science student at Universitas Indonesia. Learning, building, and figuring things out along the way."
         ),
+        "mahasiswa" : Mahasiswa.objects.all()
     }
+    
     return render(request, "index.html", context)
 
 
@@ -22,3 +24,12 @@ def show_experience(request):
         "experience_list": Experience.objects.all(),
     }
     return render(request, "experience.html", context)
+
+from main.models import Mahasiswa
+
+# def show_mahasiswa(request):
+    
+
+#     return render(request, 'index.html', {
+#         'mahasiswa': mahasiswa
+#     })

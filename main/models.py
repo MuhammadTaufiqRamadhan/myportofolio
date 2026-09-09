@@ -24,6 +24,14 @@ class Experience(models.Model):
     @property
     def is_ongoing(self):
         return self.ended_at is None
+    
+
+class Mahasiswa(models.Model):
+    nama = models.CharField(max_length=100)
+    npm = models.CharField(max_length=11)
+
+    def __str__(self):
+        return self.nama
 
 # Create your models here.
 
