@@ -36,3 +36,6 @@ template= sebagai wadah untuk menampilkan data
 
 ### AI Disclosure Tugas 2
 Pada tugas ini saya hampir tidak menggunakan AI sama sekali karena tugasnya benar benar sama dengan tutorial 2, hanya perlu menambahkan 1 halaman lagi (yang kali ini saya tambahkan Education) jadi saya hanya perlu mengikuti ulang tutorial 2 jika lupa caranya. Saya hanya menggunakan AI untuk menjelaskan hal-hal yang dibahas pada pertanyaan reflektif
+
+### Tugas 2 tambahan penjelasan
+Saya juga tidak jadi menambahkan halaman project(menghapus), dan skill, dan memperbaiki tampilan untuk halaman yang tersisa.
