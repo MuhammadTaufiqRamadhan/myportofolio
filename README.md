@@ -17,3 +17,8 @@ Kelas : PBP B
 - Saya menggunakan copilot untuk menanyakan bagaimana membuat layout grid (kotak-kotak) untuk bagian skill dan interest
 
 - Saya juga menggunakan copilot untuk menanyakan bagaimana membuat animasi pada poin sebelumnya
+
+
+### Tugas 2
+
+1. 

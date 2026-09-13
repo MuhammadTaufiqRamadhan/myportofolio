@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ name }} - Portfolio</title>
+    <title>{{ username }} - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -16,12 +16,12 @@
         <div class="right-shape"></div>
         <!-- menambahkan hiasan di pojok kanan dan kiri atas -->
         <div class="container">
-            <a href="{% url 'main:show_main' %}" class="brand">{{ name }}</a>
+            <a href="{% url 'main:show_main' %}" class="brand">{{ username }}</a>
             <nav>
                 <a href="{% url 'main:show_main' %}">Profile</a>
-                <!-- <a href="{% url 'landing_page' %}">Profile</a> -->
-                <a href="{% url 'skill_page' %}">Skill</a>
-                <a href="{% url 'project_page' %}">Project</a>
+                <!-- <a href="{% url 'skill_page' %}">Skill</a> -->
+                <!-- <a href="{% url 'project_page' %}">Project</a> -->
+                <a href="{% url 'main:show_education' %}">Education</a>
                 <a href="{% url 'interest_page' %}">Interest</a>
                 <a href="{% url 'main:show_experience' %}">Experience</a>
             </nav>
@@ -33,7 +33,7 @@
             <div class="container hero-grid">
                 <div class="hero-identity">
                     <p class="hero-kicker">Hello</p>
-                    <h1 class="intro">I'm <span class= "name">Taufiq</span> CS student at University Indonesia </h1> 
+                    <h1 class="intro">I'm <span class= "name">{{ username }}</span> CS student at University Indonesia </h1> 
                     <!-- menambahkan class name agar dapat mengubah hanya nama -->
                 </div>
                 <div class="hero-photo">
